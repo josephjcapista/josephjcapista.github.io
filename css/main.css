@@ -1,0 +1,218 @@
+/* ==============
+Main Flexible Column Layout Created with Bulma CSS Framework
+================
+*/
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i);
+/* ==============
+DejaVu Sans Fonts
+================
+*/
+@font-face {
+    font-family: 'DejaVu Sans';
+    src: url('../fonts/dejavu-sans-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/dejavu-sans-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/dejavu-sans-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/dejavu-sans-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/dejavu-sans-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/dejavu-sans-webfont.svg#dejavu_sansregular') format('svg'); /* Legacy iOS */
+}
+/* ==============
+Fonts
+================
+*/
+body,
+input,
+select,
+textarea {
+  font-family: 'Crimson Text',"Georgia", "Times New Roman", serif;
+ }
+.label, .field input.input {
+    font-family: 'DejaVu Sans',"Helvetica Neue", Arial, sans-serif; }
+a.button {
+  font-family: 'DejaVu Sans',"Helvetica Neue", Arial, sans-serif;;
+}
+h1,h2,h3,h4,h5,h6, .navbar
+       {
+            font-family: 'DejaVu Sans',"Helvetica Neue", Arial, sans-serif;;
+       }
+.period-circle {
+  font-family: 'Georgia','Times New Roman', serif;
+}
+.content p {
+     font-weight:500;
+     color:#464646;
+}
+.is-main-name {
+     font-size: 6rem;
+          text-shadow: 1px 1px #111;
+}
+.intro > h2 {
+     line-height: 3.5rem;
+}
+h1.site-name     {
+     margin:1.5rem;
+     font-size:1.2rem;
+}
+
+.navbar-burger {
+      color: rgba(255, 255, 255, 1) !important;
+}
+
+/* ==============.
+Creates Sticky Footer with Flexbox
+================
+*/
+.site {
+display: flex;
+min-height: 100vh;
+flex-direction: column;
+}
+
+.site-content {
+flex: 1;
+}
+
+/* ==============
+Space Correction and Addition
+================
+*/
+.intro {
+  margin-top:3.5rem;
+  margin-bottom:6.5rem;
+}
+.myimages {
+  width: 100%;
+  object-fit: cover;
+}
+.myimagesfeature {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+}
+
+ul.poems-page {
+  list-style-type: none;
+}
+.section.blurb-section {
+  padding: 0rem 1.5rem;
+}
+hr {
+  background-color:#DADADA;
+}
+
+.front-cover {
+  box-shadow: 0px 1px 1px 2px #d6d4d4;
+}
+
+.footer-names p {
+  margin-bottom:0rem !important;
+  color: #fff;
+}
+/* ==============.
+Navigation Colors
+================
+*/
+ul.footer-menu li a, .navbar.is-transparent a.navbar-item  {
+    color: #fff;
+    text-shadow: 1px 1px #111;
+ }
+
+div.navbar-brand > a > h1:hover, a.navbar-item:hover {
+    color: #CECECE !important;
+    font-style: italic;
+ }
+ ul.footer-menu li a:hover {
+    color: #CECECE !important;
+ }
+
+ /* ==============.
+ Nav Bar Burger Expansion
+ ================
+ */
+
+.navbar-burger {
+    height: 5rem;
+    width: 5rem; }
+.navbar-burger span {
+    height: 2px;
+    left: calc(50% - 8px);
+    width: 20px;
+    box-shadow: 1px 1px black;
+    }
+.navbar-burger span:nth-child(1) {
+    top: calc(50% - 9px); }
+.navbar-burger span:nth-child(2) {
+    top: calc(50% - 1.5px); }
+.navbar-burger span:nth-child(3) {
+    top: calc(50% + 6px); }
+.navbar-burger:hover {
+    background-color: rgba(0, 0, 0, 0.05); }
+.navbar-burger.is-active span:nth-child(1) {
+    transform: translateY(7.5px) rotate(45deg); }
+.navbar-burger.is-active span:nth-child(2) {
+    opacity: 0; }
+.navbar-burger.is-active span:nth-child(3) {
+    transform: translateY(-7.5px) rotate(-45deg); }
+
+ /* ==============
+      Footer Section and Media Queries
+      ================
+*/
+.ender {
+     padding: 1rem 0rem 1rem 0rem;
+}
+.spacer {
+     padding: 1rem 0rem 3rem 0rem;
+}
+
+.footer-centered {.&nbsp;
+     text-align:center;
+}
+.footer-menu li {
+     list-style-type: none;
+     display: inline-block;
+     padding: 0rem 1rem 0rem 0rem;
+
+}
+.footer-divider {
+     max-width:17rem;
+     text-align:center;
+     margin:1rem auto .5rem auto;
+}
+@media only screen and (max-width: 768px) {
+  .footer-menu li {
+       display: block;
+       padding: 0rem 0rem 0rem 0rem;
+       text-align: left;
+           }
+       .footer-centered {
+              text-align:left;
+       }
+       ul.footer-menu {
+            margin-left:0;
+            margin-top:0;
+       }
+       h1.site-name     {
+            margin:0rem;
+       }
+       .myimages {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+       }
+       .logos {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+       }
+  }
+@media only screen and (max-width: 1087px) {
+     h1.site-name     {
+          margin:0rem;
+     }
+     .navbar-menu {
+         background-color:  rgba(190, 190, 190, 0.5)  !important;
+       }
+}
