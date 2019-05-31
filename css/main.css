@@ -69,9 +69,13 @@ Creates Sticky Footer with Flexbox
 }
 
 .wrapper {
-  flex: 1;
+  flex: 1 0 auto;;
 }
-
+@-moz-document url-prefix() {
+ .wrapper {
+      flex: 1;
+    }
+}
 /* ==============
 Space Correction and Addition
 ================
