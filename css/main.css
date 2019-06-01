@@ -57,7 +57,23 @@ h1.site-name     {
 .navbar-burger {
       color: rgba(255, 255, 255, 1) !important;
 }
+/* ==============
+Parallax
+================
+*/
+.parallax{
+  background-image: url('../img/color_wall.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
+}
+@media screen and (max-width: 1030px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
 /* ==============.
 Creates Sticky Footer with Flexbox
 ================
@@ -69,7 +85,7 @@ Creates Sticky Footer with Flexbox
 }
 
 .wrapper {
-  flex: 1 0 auto;;
+    flex: 1 0 auto;
 }
 @-moz-document url-prefix() {
  .wrapper {
