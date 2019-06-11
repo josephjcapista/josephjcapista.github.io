@@ -25,13 +25,22 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+  <script src="js/fadein.js"></script>
+  <noscript>
+      <style>
+           #fader {
+           display: none;
+           }
+      </style>
+  </noscript>
 </head>
 
 <body>
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
-<div class="fadeIn animated">
+  <svg id="fader"></svg>
+  <script>fadeInPage()</script>
 <section class="hero parallax">
 
     <div class="hero-head">
@@ -94,7 +103,7 @@
                                                     <h2>Future.</h2>
 
                                    <p>TBA Iowa State University (Ames, IA)</p>
-                                   
+
 
                                                      <h2>Past.</h2>
                                    <p>May 12, 2019: HOT L Reading Series @ Bird in Hand Coffee & Books (Baltimore, MD)</p>
@@ -128,7 +137,7 @@
                  <hr class="has-background-white is-centered is-hidden-touch footer-divider">
                  <div class="footer-names">
                    <p>Site photos by Larry Cohen</p>
-                   <p>Site created by Sean Sam</p>
+                   <p>Site created by <a href="www.seansam.com" class="has-text-white">Sean Sam</a></p>
                    <p>&nbsp;</p>
                    <p>&copy; 2019 Joseph J. Capista</p>
                </div>
@@ -144,6 +153,6 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
       <link rel="stylesheet" href="css/app.css">
-</div>
+
 </body>
 </html>
