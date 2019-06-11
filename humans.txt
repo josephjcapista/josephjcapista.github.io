@@ -3,7 +3,7 @@
 # TEAM
 
     Web Developer: Sean Sam
-    Site: https://www.seansam.com
+    Site: https://www.seansam.com/
     Twitter: https://twitter.com/sean_sam_
     Location: Maryland
 
