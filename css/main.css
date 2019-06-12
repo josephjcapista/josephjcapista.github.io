@@ -79,6 +79,12 @@ Parallax
 Creates Sticky Footer with Flexbox
 ================
 */
+.outerwrapper {
+  display:flex;
+    flex-direction: column;
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
+}
 .firstwrapper {
   display: flex;
   min-height: 100vh;
@@ -236,4 +242,10 @@ div.navbar-brand > a > h1:hover, a.navbar-item:hover {
      .navbar-menu {
          background-color:  rgba(190, 190, 190, 0.5)  !important;
        }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   .is-main-name {
+        margin-top:25%;
+   }
 }
