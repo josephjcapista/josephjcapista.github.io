@@ -17,6 +17,14 @@ DejaVu Sans Fonts
          url('../fonts/dejavu-sans-webfont.svg#dejavu_sansregular') format('svg'); /* Legacy iOS */
     font-display: optional;
 }
+
+@media(max-width: 769px) { /* <== You can change this break point as per your  needs */
+  .reverse-columns {
+    flex-direction: column-reverse;
+    display: flex;
+  }
+}
+
 /* ==============
 Fonts
 ================
@@ -227,6 +235,10 @@ div.navbar-brand > a > h1:hover, a.navbar-item:hover {
           margin-left: auto;
           margin-right: auto;
           width: 50%;
+       }
+	   .eventimages {
+          display: block;
+		  margin: 1rem auto;
        }
        .logos {
           display: block;
