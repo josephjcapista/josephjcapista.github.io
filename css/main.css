@@ -89,6 +89,12 @@ h1.site-name     {
      margin:1.5rem;
      font-size:1.2rem;
 }
+.photo-credit {
+	font-size: 75%;
+    font-style: italic;
+    padding-top: 0rem;
+    margin-top: 0rem;
+}
 
 .navbar-burger {
       color: rgba(255, 255, 255, 1) !important;
@@ -227,7 +233,7 @@ div.navbar-brand > a > h1:hover, a.navbar-item:hover {
      padding: 1rem 0rem 3rem 0rem;
 }
 
-.footer-centered {.&nbsp;
+.footer-centered {
      text-align:center;
 }
 .footer-menu li {
@@ -237,7 +243,7 @@ div.navbar-brand > a > h1:hover, a.navbar-item:hover {
 
 }
 .footer-divider {
-     max-width:17rem;
+     max-width:20rem;
      text-align:center;
      margin:1rem auto .5rem auto;
 }
